@@ -1,0 +1,8 @@
+p = i; //ilegal, pois não tem o operador & ou * 
+q = &j; 
+p = &*&i; 
+i = (*&)j; //ilegal devido a sintaxe
+i = *&j;  
+i = *&*&j; 
+q = *p; //ilegal, já que o ponteiro 'q' não está apontando para o endereço ou o valor de '*p'
+i = (*p)++ + *q; 
